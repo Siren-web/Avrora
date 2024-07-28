@@ -1,0 +1,26 @@
+bot_name:
+- "Athena"
+
+alternative_bot_name:
+- "Афина"
+
+hi:
+- "Привет"
+- "Дарова"
+
+hi_bot:
+- "Привет"
+
+buttons:
+- "test1"
+- "Проверка"
+- "test3"
+- "test4"
+- "test5"
+- "test6"
+
+start_message: "Привет, {0.first_name}!"
+
+token_path: "../tokens/telegram_api.txt"
+
+version: "0.1.0 Beta"
