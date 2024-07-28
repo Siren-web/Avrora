@@ -38,12 +38,15 @@ class Core:
             restart()
 
         # conections commands
-        for i in range(len(self.data_config["buttons"])):
-            if get_text.lower() == self.data_config["buttons"][i].lower():
-                for x in os.listdir(f"./src/videos/btn{i + 1}"):
-                    print(x)
-                    self.bot.send_document(send_id_text,
-                                           open(f"./src/videos/btn{i + 1}/{x}", 'rb'))
+        # for i in range(len(self.data_config["buttons"])):
+        if get_text.lower() == self.data_config["buttons"][0].lower():
+            # for x in os.listdir(f"./src/videos/btn{i + 1}"):
+            #     print(x)
+            #     self.bot.send_document(send_id_text,
+            #                            open(f"./src/videos/btn{i + 1}/{x}", 'rb'))
+            self.bot.send_message(send_id_text, choice(self.data_config["group"]))
+        else:
+            self.bot.send_message(send_id_text, "ERROR")
 
     # function connections
     def video_btn(self):
