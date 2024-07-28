@@ -1,12 +1,11 @@
 bot_name:
-- "Athena"
+- "Avrora"
 
 alternative_bot_name:
-- "Афина"
+- "Аврора"
 
 hi:
 - "Привет"
-- "Дарова"
 
 hi_bot:
 - "Привет"
@@ -21,6 +20,6 @@ buttons:
 
 start_message: "Привет, {0.first_name}!"
 
-token_path: "../tokens/telegram_api.txt"
+token_path: "./tokens/avrora_token.txt"
 
-version: "0.1.0 Beta"
+version: "0.3.0 Beta"
