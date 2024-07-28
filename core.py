@@ -2,7 +2,6 @@ from random import choice
 import telebot
 import yaml
 from libs.button_lib import ButtonLib
-import os
 
 
 # module connections
@@ -34,7 +33,7 @@ class Core:
         # core commands
         if get_text in self.data_config["hi"]:
             self.bot.send_message(send_id_text, choice(self.data_config["hi_bot"]))
-        elif get_text.lower() == "helga, restart":
+        elif get_text.lower() == "avrora, restart":
             restart()
 
         # conections commands
